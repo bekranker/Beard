@@ -16,16 +16,17 @@ namespace States
 
 namespace InteractingObjects
 {
-
-    
-
     public class ObjectManager : MonoBehaviour
     {
         public ObjectState myState = ObjectState.WithoutBeard;
         public List<ObjectManager> DedectedObjects = new List<ObjectManager>();
         [SerializeField] private ObjectSpriteManager _ObjectSpriteManager;
+        public bool IsTouchingScissors = false;
+
+
         public void DedectionAction(ObjectManager objectManager)
         {
+            if (IsTouchingScissors) return;
             ChangeState(objectManager);
         }
         private void ChangeState(ObjectManager objectManager)

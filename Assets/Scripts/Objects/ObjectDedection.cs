@@ -29,7 +29,8 @@ namespace InteractingObjects
             {
                 if (collision.gameObject.TryGetComponent(out ObjectManager objectManager))
                 {
-                    _ObjectManager.DedectedObjects.Add(objectManager);
+                    if (!_ObjectManager.DedectedObjects.Contains(objectManager))
+                        _ObjectManager.DedectedObjects.Add(objectManager);
                     _ObjectManager.DedectionAction(objectManager);
                 }
             }

@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 7594077409972223849}
   m_Layer: 6
   m_Name: Metal Box
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +157,7 @@ MonoBehaviour:
   myState: 0
   DedectedObjects: []
   _ObjectSpriteManager: {fileID: 909091344278657013}
+  IsTouchingScissors: 0
 --- !u!114 &909091344278657013
 MonoBehaviour:
   m_ObjectHideFlags: 0

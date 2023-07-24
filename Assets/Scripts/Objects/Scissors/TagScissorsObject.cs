@@ -6,13 +6,13 @@ using UnityEngine;
 
 namespace InteractingObjects
 {
-    public class ScissorsManager : MonoBehaviour
+    public class TagScissorsObject : MonoBehaviour
     {
 
         private List<ObjectManager> _dedectedObjects = new List<ObjectManager>();
         public void CutTheBeard(ObjectManager objectManager)
         {
-            objectManager.myState = States.ObjectState.WithoutBeard;
+            objectManager.ChangeState(States.ObjectState.WithoutBeard);
             objectManager.IsTouchingScissors = true;
         }
 

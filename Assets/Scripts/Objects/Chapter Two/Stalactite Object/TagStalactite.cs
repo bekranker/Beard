@@ -1,9 +1,12 @@
-using InteractingObjects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MetalObjectManager : MonoBehaviour
+
+namespace Chapter2
 {
-   
+    public class TagStalactite : MonoBehaviour
+    {
+
+    }
 }

@@ -1,19 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace InteractingObjects
 {
-
-
-
     /// <summary>
     /// This Class is working on object detection where we wanna to be beard or not beard to the objects
     /// </summary>
-
-
-
-
 
     public class ObjectDedection : MonoBehaviour
     {
@@ -22,6 +16,7 @@ namespace InteractingObjects
         [Space(25)]
         [Header("-----Layers-----")]
         [SerializeField] private LayerMask _TouchableColliderLayers;
+
 
         private void OnCollisionEnter2D(Collision2D collision)
         {

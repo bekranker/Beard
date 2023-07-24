@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Metal
   - Wood
+  - Ice
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - CanTouch
